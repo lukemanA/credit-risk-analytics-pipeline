@@ -1,0 +1,6 @@
+# Ignore data folders
+data/
+
+# Ignore compiled DuckDB databases
+*.db
+*.db.wal

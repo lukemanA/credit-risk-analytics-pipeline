@@ -1,0 +1,10 @@
+#ignore all data files
+data/ 
+!data/sample/
+
+#Ignore local databases and system files
+*.db 
+*.wal
+.ipynb_checkpoints/
+__pycahe__/
+.env
