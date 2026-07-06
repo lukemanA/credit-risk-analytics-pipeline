@@ -65,7 +65,6 @@ By evaluating the decision threshold across a continuous `[0.05, 0.95]` sweep, w
 ### 🎯 Live Underwriting Interface
 To bridge the gap between raw data science and product engineering, this pipeline is deployed as an interactive Streamlit application, allowing underwriting teams to test applicant profiles and see real-time risk calculations:
 
-![Streamlit Application Interface](streamlit_interface.png)
 
 ### 📁 Generated Files
 The final, optimized pipeline outputs an audit-ready prediction matrix exported directly to `final_credit_risk_predictions.csv`. It contains:
