@@ -60,10 +60,18 @@ By evaluating the decision threshold across a continuous `[0.05, 0.95]` sweep, w
 *   **Default Baseline:** `0.50`
 *   **Mathematically Optimized Threshold:** `0.55` (Maximized $F_1$-score operational balance, ensuring strong default detection while filtering out thousands of false alarms).
 
----
+---## 💾 Production Deliverables & Interface
 
-## 💾 Production Deliverables
+### 🎯 Live Underwriting Interface
+To bridge the gap between raw data science and product engineering, this pipeline is deployed as an interactive Streamlit application, allowing underwriting teams to test applicant profiles and see real-time risk calculations:
+
+![Streamlit Application Interface](streamlit_interface.png)
+
+### 📁 Generated Files
 The final, optimized pipeline outputs an audit-ready prediction matrix exported directly to `final_credit_risk_predictions.csv`. It contains:
 *   `CLIENT_ID`: Unique applicant identifier.
 *   `DEFAULT_PROBABILITY`: Continuous downstream credit risk probability mapping.
 *   `CREDIT_DECISION_FLAG`: Optimized operational binary classification based on the calibrated `0.55` threshold.
+<img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/c12b8f6a-7f5c-4b00-b44e-04697b336419" />
+
+
