@@ -4,3 +4,6 @@ data/
 # Ignore compiled DuckDB databases
 *.db
 *.db.wal
+*.csv
+*.db
+*.db.wal
